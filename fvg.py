@@ -47,7 +47,20 @@ if __name__ == '__main__':
     chart.set(bb)
     chart.show(block=True)
 
+    img = chart.screenshot()
+    with open('screenshot.png', 'wb') as f:
+        f.write(img)
 
+
+if __name__ == '__main__':
+    chart = Chart()
+    df = pd.read_csv('ohlcv.csv')
+    chart.set(df)
+    chart.show()
+    
+    img = chart.screenshot()
+    with open('screenshot.png', 'wb') as f:
+        f.write(img)
 
 # Funciona!
 
