@@ -63,4 +63,4 @@ if __name__ == '__main__':
         f.write(img)
 
 # Funciona!
-
+# Para la version que funciona en jupyter, https://github.com/TechfaneTechnologies/pytvlwcharts/tree/main 
